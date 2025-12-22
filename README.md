@@ -18,6 +18,7 @@ Extracted from the Frame project.
 [dependencies]
 sam-session = "0.1.0"
 ```
+## Dependency Architecture**frame-presence depends on:**```frame-presence└── frame-catalog (database)```**Used by:** frame-mesh (session tracking)**Position in Frame ecosystem:**```frame-catalog    └→ frame-presence        └→ frame-mesh```
 
 ```rust
 use sam_session::{SessionStore, DeviceRegistry, Session, DeviceType};
