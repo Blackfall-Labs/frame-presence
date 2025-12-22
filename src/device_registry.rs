@@ -41,7 +41,7 @@
 //! # }
 //! ```
 
-use sam_vector::database::{Database, DatabaseError};
+use frame_catalog::database::{Database, DatabaseError};
 use chrono::{DateTime, Utc};
 use rusqlite::{params, Connection};
 use serde::{Deserialize, Serialize};

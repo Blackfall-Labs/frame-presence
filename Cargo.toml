@@ -1,10 +1,10 @@
 [package]
-name = "sam-session"
+name = "frame-presence"
 version = "0.1.0"
 edition = "2021"
 authors = ["Magnus Trent <magnus@blackfall.dev>"]
 license = "MIT"
-repository = "https://github.com/Blackfall-Labs/sam-session"
+repository = "https://github.com/Blackfall-Labs/frame-presence"
 description = "Session tracking and device fingerprinting for AI systems"
 keywords = ["session", "device-fingerprint", "authentication", "context", "ai"]
 categories = ["authentication", "web-programming"]
@@ -19,8 +19,8 @@ uuid = { version = "1.0", features = ["v4", "serde"] }
 # Database
 rusqlite = { version = "0.31", features = ["bundled", "serde_json"] }
 
-# sam-vector for Database trait
-sam-vector = { path = "../sam-vector" }
+# frame-catalog for Database trait
+frame-catalog = { path = "../frame-catalog" }
 
 # Error handling
 thiserror = "2.0"

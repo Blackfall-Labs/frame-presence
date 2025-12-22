@@ -1,4 +1,4 @@
-//! # SAM Session - Session Tracking and Device Fingerprinting
+//! # Frame Presence - Session Tracking and Device Fingerprinting
 //!
 //! Track user sessions across multiple devices and enable contextual authentication.
 //!
@@ -34,7 +34,7 @@
 //!
 //! ```rust,ignore
 //! use sam_session::{SessionStore, DeviceRegistry, Session, DeviceFingerprint, DeviceType};
-//! use sam_vector::Database;
+//! use frame_catalog::Database;
 //! use uuid::Uuid;
 //!
 //! // Initialize stores

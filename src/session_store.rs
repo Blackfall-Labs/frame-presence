@@ -3,7 +3,7 @@
 //! Tracks active and historical sessions across all SAM instances.
 //! Enables cross-instance context: "I see you spoke with me on your desktop"
 
-use sam_vector::Database;
+use frame_catalog::Database;
 use crate::sessions::{DeviceFingerprint, DeviceType, Session};
 use chrono::{DateTime, Utc};
 use rusqlite::params;

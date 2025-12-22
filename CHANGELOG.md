@@ -3,7 +3,7 @@
 ## [0.1.0] - 2025-12-21
 
 ### Added
-- Initial release extracted from SAM project
+- Initial release extracted from Frame project
 - **Session Tracking**: Cross-instance session management
   - Desktop, laptop, mobile, tablet, Raspberry Pi, server support
   - Session lifecycle (creation, activity counters, end time)
@@ -41,7 +41,7 @@
 
 ### Dependencies
 - rusqlite 0.31 (persistence)
-- sam-vector (Database trait)
+- frame-catalog (Database trait)
 - num_cpus 1.16 (system info)
 - hostname 0.4 (device identification)
 - chrono 0.4 (timestamps)
@@ -52,5 +52,5 @@
 - 2 doctests ignored (API examples need updates)
 
 ### Notes
-- Extracted from [SAM (Societal Advisory Module)](https://github.com/Blackfall-Labs/sam)
+- Extracted from [Frame](https://github.com/Blackfall-Labs/sam)
 - Production-ready for multi-device authentication systems

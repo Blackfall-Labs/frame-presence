@@ -1,8 +1,8 @@
-# SAM Session - Session Tracking and Device Fingerprinting
+# Frame Presence - Session Tracking and Device Fingerprinting
 
 **Track user sessions across devices and enable contextual authentication for AI systems.**
 
-Extracted from the SAM (Societal Advisory Module) project.
+Extracted from the Frame project.
 
 ## Features
 
@@ -21,7 +21,7 @@ sam-session = "0.1.0"
 
 ```rust
 use sam_session::{SessionStore, DeviceRegistry, Session, DeviceType};
-use sam_vector::Database;
+use frame_catalog::Database;
 
 // Initialize stores
 let db = Database::new("sessions.db")?;
@@ -76,7 +76,7 @@ if device_registry.is_device_trusted("user123", &device_id)? {
 ## Dependencies
 
 - `rusqlite` (0.31) - Session/device persistence
-- `sam-vector` - Database trait
+- `frame-catalog` - Database trait
 - `num_cpus` (1.16) - System info
 - `hostname` (0.4) - Device identification
 
