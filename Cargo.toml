@@ -1,0 +1,36 @@
+[package]
+name = "sam-session"
+version = "0.1.0"
+edition = "2021"
+authors = ["Magnus Trent <magnus@blackfall.dev>"]
+license = "MIT"
+repository = "https://github.com/Blackfall-Labs/sam-session"
+description = "Session tracking and device fingerprinting for AI systems"
+keywords = ["session", "device-fingerprint", "authentication", "context", "ai"]
+categories = ["authentication", "web-programming"]
+
+[dependencies]
+# Core
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
+# Database
+rusqlite = { version = "0.31", features = ["bundled", "serde_json"] }
+
+# sam-vector for Database trait
+sam-vector = { path = "../sam-vector" }
+
+# Error handling
+thiserror = "2.0"
+
+# System info
+num_cpus = "1.16"
+hostname = "0.4"
+
+# Logging
+tracing = "0.1"
+
+[dev-dependencies]
+tempfile = "3.0"
