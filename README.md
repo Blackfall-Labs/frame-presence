@@ -2,7 +2,7 @@
 
 **Track user sessions across devices and enable contextual authentication for AI systems.**
 
-Extracted from the Frame project.
+Extracted from the Frame microservices architecture.
 
 ## Features
 
@@ -18,7 +18,25 @@ Extracted from the Frame project.
 [dependencies]
 sam-session = "0.1.0"
 ```
-## Dependency Architecture**frame-presence depends on:**```frame-presence└── frame-catalog (database)```**Used by:** frame-mesh (session tracking)**Position in Frame ecosystem:**```frame-catalog    └→ frame-presence        └→ frame-mesh```
+
+## Dependency Architecture
+
+**frame-presence depends on:**
+
+```
+frame-presence
+└── frame-catalog (database)
+```
+
+**Used by:** frame-mesh (session tracking)
+
+**Position in Frame ecosystem:**
+
+```
+frame-catalog
+    └→ frame-presence
+        └→ frame-mesh
+```
 
 ```rust
 use sam_session::{SessionStore, DeviceRegistry, Session, DeviceType};
@@ -97,5 +115,4 @@ Magnus Trent <magnus@blackfall.dev>
 
 ## Links
 
-- **GitHub:** https://github.com/Blackfall-Labs/sam-session
-- **SAM Project:** https://github.com/Blackfall-Labs/sam
+- **GitHub:** https://github.com/Blackfall-Labs/frame-presence
